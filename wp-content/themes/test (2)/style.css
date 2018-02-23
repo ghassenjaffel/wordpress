@@ -1,0 +1,201 @@
+	/*!
+    Theme Name: test
+    Theme URI: http://underscores.me/
+    Author: Underscores.me
+    Author URI: http://underscores.me/
+    Description: first theme
+    Version: 1.0.0
+    License: GNU General Public License v2 or later
+    License URI: LICENSE
+    Text Domain: test
+    Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+    This theme, like WordPress, is licensed under the GPL.
+    Use it to make something cool, have fun, and share what you've learned with others.
+
+    test is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+    Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+    Normalizing styles have been helped along thanks to the fine work of
+    Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+    */
+	/*--------------------------------------------------------------
+    >>> TABLE OF CONTENTS:
+    ----------------------------------------------------------------
+    # Normalize
+    # Typography
+    # Elements
+    # Forms
+    # Navigation
+       ## Links
+       ## Menus
+    # Accessibility
+    # Alignments
+    # Clearings
+    # Widgets
+    # Content
+       ## Posts and pages
+       ## Comments
+    # Infinite scroll
+    # Media
+       ## Captions
+       ## Galleries
+    --------------------------------------------------------------*/
+	/*--------------------------------------------------------------
+    # Normalize
+    --------------------------------------------------------------*/
+@font-face {
+	font-family: Montserrat;
+	src: url("/fonts/Montserrat-Regular.otf");
+}
+
+body{
+	overflow-x: hidden;
+	font-family: "Montserrat";
+	background: url("test_images/background.jpg") center center no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+}
+
+.bande{
+
+	padding-top: 10px;
+}
+
+.logoheader{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 10%;
+	position: center;
+
+}
+.headerul{
+	position: absolute;
+	right: 30px;
+	top: 20px;
+	font-size: 11px;
+}
+.headerli{
+	display: inline-block;
+	height: 50px;
+	line-height: 10px;
+	padding: 0 1px;
+	color: #555;
+}
+.footer {
+
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 10px;
+	margin-left: 20px;
+	color: white;
+	font-family: "Montserrat";
+	font-size: 14px;
+}
+.text_footer{
+
+
+	border-bottom: 1px solid #e8e8e8;
+}
+.position_video{
+	position: absolute;
+	left: 100px;
+	top: 30px;
+
+}
+.left_pos{
+	left: 100px;
+}
+.right_pos{
+	right: 100px;
+}
+
+/*
+
+POPUP
+
+ */
+.menu{
+
+	width: 550px;
+	height: 500px;
+	position: absolute;
+	background-color:rgba(255, 255, 255, 0.8);
+	z-index: 1;
+	font-size: 50px;
+	left: 200px;
+	top: 16px;
+
+}
+.popup ul li{
+	list-style-type:none;
+	text-align: center;
+}
+
+/* Popup container */
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+	width: 160px;
+
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: 80px;
+    vertical-align: center;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s
+}
+#myPopup.popuptext{
+    color: white;
+    display: inline-block;
+    transform: rotate(270deg);
+}
+
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+}
+
+
+
+
+	
+	
